@@ -1,0 +1,32 @@
+ClIENT
+npx create-react-app ./  
+npm install stream-chat stream-chat-react universal-cookie
+npm install axios     
+npm start                           
+SERVER
+npm init -y   
+npm install bcrypt crypto dotenv express getstream stream-chat nodemon twilio
+npm install cors                               
+npm run dev 
+
+Changes to be made:
+1) change const URL = 'https://localhost:5000/auth'; to const URL = 'http://localhost:5000/auth'; in
+ client>src>components>Auth.jsx
+
+2) paste in client>src>index.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./App.css";
+import App from "./App";
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+3)Set key in client>src>App.jsx and .env
+
+
+                                  
